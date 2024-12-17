@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".listco">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbartext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="Update Tujuan Final"
+        app:titleTextColor="#ffffff"
+        android:background="#0f4c81"
+        android:minHeight="?attr/actionBarSize"/>
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbartext"
+        android:background="#0f4c81">
+        <SearchView
+            android:id="@+id/caridata"
+            android:background="@drawable/rounded_searchview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:queryHint="Cari CO "
+            android:iconifiedByDefault="false"
+            android:layout_margin="16dp"/>
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/listco"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginTop="1dp" />
+
+</RelativeLayout>

@@ -1,0 +1,1167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".update_co">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbartext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:title="Update Tujuan Final"
+            app:titleTextColor="#ffffff"
+            android:background="#0f4c81"
+            android:minHeight="?attr/actionBarSize"/>
+
+        <LinearLayout
+            android:id="@+id/formdetail"
+            android:layout_below="@+id/toolbartext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:padding="10dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/idco"
+                android:text="id"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#0F4C81"
+                android:textSize="24sp"/>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:layout_alignParentLeft="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hari/Tanggal"
+                    android:textColor="#000000"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/hari"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="-"
+                    android:textColor="#000000"
+                    android:textSize="14dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:layout_alignParentLeft="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nopol"
+                    android:textColor="#000000"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/textnopol"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="-"
+                    android:textColor="#000000"
+                    android:textSize="14dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:layout_alignParentLeft="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nama PT"
+                    android:textColor="#000000"
+                    android:textSize="14dp" />
+                <TextView
+                    android:id="@+id/pt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="-"
+                    android:textColor="#000000"
+                    android:textSize="14dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:layout_alignParentLeft="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Window"
+                    android:textColor="#000000"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/window"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="-"
+                    android:textColor="#000000"
+                    android:textSize="14dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:layout_alignParentLeft="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Type"
+                    android:textColor="#000000"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="-"
+                    android:textColor="#000000"
+                    android:textSize="14dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:layout_alignParentLeft="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Material"
+                    android:textColor="#000000"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/material"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="-"
+                    android:textColor="#000000"
+                    android:textSize="14dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:layout_alignParentLeft="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Transporter"
+                    android:textColor="#000000"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/transporter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="-"
+                    android:textColor="#000000"
+                    android:textSize="14dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/nomor"
+                    android:layout_alignParentLeft="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="nomor"
+                    android:textColor="#000000"
+                    android:textSize="14dp" />
+                <TextView
+                    android:layout_alignParentLeft="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pabrik"
+                    android:textColor="#000000"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/pabrik"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="-"
+                    android:textColor="#000000"
+                    android:textSize="14dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:layout_alignParentLeft="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tujuan Awal"
+                    android:textColor="#000000"
+                    android:textSize="14dp" />
+                <TextView
+                    android:id="@+id/tujualawal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="-"
+                    android:textColor="#000000"
+                    android:textSize="14dp" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/formtujuan"
+            android:layout_below="@+id/formdetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:padding="10dp"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/tujuanpengiriman"
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+            <TextView
+                android:text="Tujuan Pengiriman"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:textSize="15sp"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:layout_alignParentLeft="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pool/Depo Tujuan"
+                    android:textColor="#000000"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/depopool"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:layout_alignParentRight="true"
+                    android:text="-"
+                    android:textColor="#000000"
+                    android:textSize="14dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:layout_alignParentLeft="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SO Tujuan"
+                    android:textColor="#000000"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/so"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:layout_alignParentRight="true"
+                    android:text="-"
+                    android:textColor="#000000"
+                    android:textSize="14dp" />
+            </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+                    <TextView
+                        android:layout_alignParentLeft="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tujuan Divert"
+                        android:textColor="#000000"
+                        android:textSize="14dp" />
+
+                    <TextView
+                        android:id="@+id/divert2"
+                        android:layout_width="200dp"
+                        android:gravity="end"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="-"
+                        android:textColor="#000000"
+                        android:textSize="14dp" />
+                </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:id="@+id/tujuan"
+                        android:layout_alignParentRight="true"
+                        android:text="Tujuan Final"
+                        android:padding="10dp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="#0F4C81"
+                        android:background="@drawable/my_button_bg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <Button
+                        android:id="@+id/buttondivert"
+                        android:layout_toLeftOf="@+id/tujuan"
+                        android:text="Divert"
+                        android:layout_marginLeft="20dp"
+                        android:padding="10dp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="#0F4C81"
+                        android:background="@drawable/my_button_bg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+            </RelativeLayout>
+            </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tujuanfinal"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="Tujuan Pengiriman"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:textSize="15sp"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/edittujuan"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="match_parent"
+                app:boxCornerRadiusBottomEnd="4dp"
+                app:boxCornerRadiusBottomStart="4dp"
+                app:boxCornerRadiusTopEnd="4dp"
+                app:boxCornerRadiusTopStart="4dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:layout_centerHorizontal="true">
+                <EditText
+                    android:id="@+id/pilihtujuan"
+                    android:layout_width="fill_parent"
+                    android:clickable="true"
+                    android:focusable="false"
+                    android:longClickable="false"
+                    android:singleLine="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="53dp"
+                    android:hint="Jenis Tujuan"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/pilihdepo"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="fill_parent"
+                android:visibility="gone"
+                app:boxCornerRadiusBottomEnd="4dp"
+                app:boxCornerRadiusBottomStart="4dp"
+                app:boxCornerRadiusTopEnd="4dp"
+                app:boxCornerRadiusTopStart="4dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_centerHorizontal="true">
+            <LinearLayout
+                android:background="@drawable/rounded_corner"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editdepo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:focusable="false"
+                    android:hint="Pilih Depo"
+                    android:inputType="none" />
+                <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                    android:id="@+id/choosedepo"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="-50dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_height="42dp"
+                    android:clickable="true"
+                    android:focusable="false"
+                    android:longClickable="false"
+                    android:textColor="#333"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/pilihso"
+                android:visibility="gone"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="fill_parent"
+                app:boxCornerRadiusBottomEnd="4dp"
+                app:boxCornerRadiusBottomStart="4dp"
+                app:boxCornerRadiusTopEnd="4dp"
+                app:boxCornerRadiusTopStart="4dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_centerHorizontal="true">
+                <LinearLayout
+                    android:background="@drawable/rounded_corner"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/editso"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:focusable="false"
+                        android:hint="Pilih DO"
+                        android:inputType="none" />
+                    <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                        android:id="@+id/chooseso"
+                        android:layout_width="wrap_content"
+                        android:layout_marginLeft="-50dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_height="42dp"
+                        android:clickable="true"
+                        android:focusable="false"
+                        android:longClickable="false"
+                        android:textColor="#333"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/divert"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="Tujuan Pengiriman"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:textSize="15sp"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/edittexttujuandivert"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                    android:layout_width="match_parent"
+                    app:boxCornerRadiusBottomEnd="4dp"
+                    app:boxCornerRadiusBottomStart="4dp"
+                    app:boxCornerRadiusTopEnd="4dp"
+                    app:boxCornerRadiusTopStart="4dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_centerHorizontal="true">
+                    <EditText
+                        android:id="@+id/edittujuandivert"
+                        android:layout_width="fill_parent"
+                        android:clickable="true"
+                        android:focusable="false"
+                        android:longClickable="false"
+                        android:singleLine="true"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="53dp"
+                        android:hint="Jenis Tujuan"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/pilihdepodivert"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                    android:visibility="gone"
+                    android:layout_width="fill_parent"
+                    app:boxCornerRadiusBottomEnd="4dp"
+                    app:boxCornerRadiusBottomStart="4dp"
+                    app:boxCornerRadiusTopEnd="4dp"
+                    app:boxCornerRadiusTopStart="4dp"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_centerHorizontal="true">
+                    <LinearLayout
+                        android:background="@drawable/rounded_corner"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/editdepodivert"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_horizontal"
+                            android:focusable="false"
+                            android:hint="Pilih Depo"
+                            android:inputType="none" />
+                        <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                            android:id="@+id/choosedepodivert"
+                            android:layout_width="wrap_content"
+                            android:layout_marginLeft="-50dp"
+                            android:layout_marginTop="12dp"
+                            android:layout_height="42dp"
+                            android:clickable="true"
+                            android:focusable="false"
+                            android:longClickable="false"
+                            android:textColor="#333"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/pilihsodivert"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                    android:visibility="gone"
+                    android:layout_width="fill_parent"
+                    app:boxCornerRadiusBottomEnd="4dp"
+                    app:boxCornerRadiusBottomStart="4dp"
+                    app:boxCornerRadiusTopEnd="4dp"
+                    app:boxCornerRadiusTopStart="4dp"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_centerHorizontal="true">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/rounded_corner"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/editsodivert"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_horizontal"
+                            android:focusable="false"
+                            android:hint="Pilih DO"
+                            android:inputType="none" />
+                        <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                            android:id="@+id/choosesodivert"
+                            android:layout_width="wrap_content"
+                            android:layout_marginLeft="-50dp"
+                            android:layout_marginTop="12dp"
+                            android:layout_height="42dp"
+                            android:clickable="true"
+                            android:focusable="false"
+                            android:longClickable="false"
+                            android:textColor="#333"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/edittextkategoridivert"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                    android:layout_width="match_parent"
+                    app:boxCornerRadiusBottomEnd="4dp"
+                    app:boxCornerRadiusBottomStart="4dp"
+                    app:boxCornerRadiusTopEnd="4dp"
+                    app:boxCornerRadiusTopStart="4dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_centerHorizontal="true">
+                    <EditText
+                        android:id="@+id/editkategoridivert"
+                        android:layout_width="fill_parent"
+                        android:clickable="true"
+                        android:focusable="false"
+                        android:longClickable="false"
+                        android:singleLine="true"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="53dp"
+                        android:hint="Kategori Divert"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/edittextketerangandivert"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                    android:layout_width="match_parent"
+                    app:boxCornerRadiusBottomEnd="4dp"
+                    app:boxCornerRadiusBottomStart="4dp"
+                    app:boxCornerRadiusTopEnd="4dp"
+                    app:boxCornerRadiusTopStart="4dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_centerHorizontal="true">
+                    <EditText
+                        android:id="@+id/editketerangandivert"
+                        android:layout_width="fill_parent"
+                        android:layout_height="153dp"
+                        android:hint="Kategori Divert"
+                        android:lines="5"
+                        android:gravity="top|start"
+                        android:inputType="textMultiLine"
+                        android:scrollHorizontally="false"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/buttonPanel2"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:visibility="gone"
+            android:layout_marginBottom="25dp"
+            android:paddingBottom="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/formtujuan"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/batal"
+                android:layout_width="190dp"
+                android:layout_height="48dp"
+                android:background="@drawable/my_button_bg"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textColor="#0F4C81"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:scaleType="fitXY"
+                android:text="Batal"/>
+
+            <Button
+                android:id="@+id/simpan"
+                android:layout_width="190dp"
+                android:layout_height="48dp"
+                android:layout_marginLeft="16dp"
+                android:background="@drawable/my_button_bg"
+                android:backgroundTint="#0F4C81"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:scaleType="fitXY"
+                android:text="Simpan"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+<!--        <TextView-->
+<!--            android:id="@+id/lon"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:textSize="12dp"-->
+<!--            android:textColor="#ffffff"-->
+<!--            android:text = "long" />-->
+<!--        <TextView-->
+<!--            android:id="@+id/lat"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:textSize="12dp"-->
+<!--            android:text = "lat"-->
+<!--            android:textColor="#ffffff"-->
+<!--            android:layout_alignParentRight="true"/>-->
+<!--        <TextView-->
+<!--            android:id="@+id/title"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:padding="15dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_centerHorizontal="true"-->
+<!--            android:textSize="25dp"-->
+<!--            android:text="TUJUAN FINAL CO"-->
+<!--            android:textStyle="bold"-->
+<!--            android:textColor="#000000" />-->
+
+<!--        <com.google.android.material.textfield.TextInputLayout-->
+<!--            android:id="@+id/edittextdataco"-->
+<!--            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:paddingLeft="30dp"-->
+<!--            android:paddingRight="30dp"-->
+<!--            android:layout_centerHorizontal="true"-->
+<!--            android:layout_marginTop="15dp"-->
+<!--            app:boxCornerRadiusBottomEnd="25dp"-->
+<!--            app:boxCornerRadiusBottomStart="25dp"-->
+<!--            app:boxCornerRadiusTopEnd="25dp"-->
+<!--            app:boxCornerRadiusTopStart="25dp"-->
+<!--            app:boxStrokeColor="#0F4C81"-->
+<!--            android:layout_below="@+id/title">-->
+
+<!--            <EditText-->
+<!--                android:id="@+id/dataco"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="50dp"-->
+<!--                android:layout_gravity="center_horizontal"-->
+<!--                android:focusable="false"-->
+<!--                android:hint="DATA CO"-->
+<!--                android:longClickable="false"-->
+<!--                android:singleLine="true"-->
+<!--                android:textSize="14dp"-->
+<!--                tools:layout_editor_absoluteX="41dp"-->
+<!--                tools:layout_editor_absoluteY="442dp" />-->
+<!--        </com.google.android.material.textfield.TextInputLayout>-->
+
+<!--        <com.google.android.material.textfield.TextInputLayout-->
+<!--            android:id="@+id/edittexttype"-->
+<!--            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:paddingLeft="30dp"-->
+<!--            android:paddingRight="30dp"-->
+<!--            android:layout_centerHorizontal="true"-->
+<!--            android:layout_marginTop="15dp"-->
+<!--            app:boxCornerRadiusBottomEnd="25dp"-->
+<!--            app:boxCornerRadiusBottomStart="25dp"-->
+<!--            app:boxCornerRadiusTopEnd="25dp"-->
+<!--            app:boxCornerRadiusTopStart="25dp"-->
+<!--            app:boxStrokeColor="#0F4C81"-->
+<!--            android:layout_below="@+id/edittextdataco">-->
+<!--            <EditText-->
+<!--                android:id="@+id/type"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="50dp"-->
+<!--                android:layout_gravity="center_horizontal"-->
+<!--                android:hint="TYPE"-->
+<!--                android:focusable="false"-->
+<!--                android:longClickable="false"-->
+<!--                android:singleLine="true"-->
+<!--                android:textSize="14dp"-->
+<!--                tools:layout_editor_absoluteX="41dp"-->
+<!--                tools:layout_editor_absoluteY="442dp" />-->
+<!--        </com.google.android.material.textfield.TextInputLayout>-->
+
+<!--        <com.google.android.material.textfield.TextInputLayout-->
+<!--            android:id="@+id/edittextmuatan"-->
+<!--            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:paddingLeft="30dp"-->
+<!--            android:paddingRight="30dp"-->
+<!--            android:layout_centerHorizontal="true"-->
+<!--            android:layout_marginTop="15dp"-->
+<!--            app:boxCornerRadiusBottomEnd="25dp"-->
+<!--            app:boxCornerRadiusBottomStart="25dp"-->
+<!--            app:boxCornerRadiusTopEnd="25dp"-->
+<!--            app:boxCornerRadiusTopStart="25dp"-->
+<!--            app:boxStrokeColor="#0F4C81"-->
+<!--            android:layout_below="@+id/edittexttype">-->
+<!--            <EditText-->
+<!--                android:id="@+id/muatan"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="50dp"-->
+<!--                android:layout_gravity="center_horizontal"-->
+<!--                android:hint="Muatan"-->
+<!--                android:focusable="false"-->
+<!--                android:longClickable="false"-->
+<!--                android:singleLine="true"-->
+<!--                android:textSize="14dp"-->
+<!--                tools:layout_editor_absoluteX="41dp"-->
+<!--                tools:layout_editor_absoluteY="442dp" />-->
+<!--        </com.google.android.material.textfield.TextInputLayout>-->
+
+<!--        <com.google.android.material.textfield.TextInputLayout-->
+<!--            android:id="@+id/edittexthari"-->
+<!--            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:paddingLeft="30dp"-->
+<!--            android:paddingRight="30dp"-->
+<!--            android:layout_centerHorizontal="true"-->
+<!--            android:layout_marginTop="15dp"-->
+<!--            app:boxCornerRadiusBottomEnd="25dp"-->
+<!--            app:boxCornerRadiusBottomStart="25dp"-->
+<!--            app:boxCornerRadiusTopEnd="25dp"-->
+<!--            app:boxCornerRadiusTopStart="25dp"-->
+<!--            app:boxStrokeColor="#0F4C81"-->
+<!--            android:layout_below="@+id/edittextmuatan">-->
+<!--            <EditText-->
+<!--                android:id="@+id/hari"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="50dp"-->
+<!--                android:layout_gravity="center_horizontal"-->
+<!--                android:hint="Hari"-->
+<!--                android:focusable="false"-->
+<!--                android:longClickable="false"-->
+<!--                android:singleLine="true"-->
+<!--                android:textSize="14dp"-->
+<!--                tools:layout_editor_absoluteX="41dp"-->
+<!--                tools:layout_editor_absoluteY="442dp" />-->
+<!--        </com.google.android.material.textfield.TextInputLayout>-->
+
+<!--        <com.google.android.material.textfield.TextInputLayout-->
+<!--            android:id="@+id/edittexttanggal"-->
+<!--            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:paddingLeft="30dp"-->
+<!--            android:paddingRight="30dp"-->
+<!--            android:layout_centerHorizontal="true"-->
+<!--            android:layout_marginTop="15dp"-->
+<!--            app:boxCornerRadiusBottomEnd="25dp"-->
+<!--            app:boxCornerRadiusBottomStart="25dp"-->
+<!--            app:boxCornerRadiusTopEnd="25dp"-->
+<!--            app:boxCornerRadiusTopStart="25dp"-->
+<!--            app:boxStrokeColor="#0F4C81"-->
+<!--            android:layout_below="@+id/edittexthari">-->
+<!--            <EditText-->
+<!--                android:id="@+id/tanggal"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="50dp"-->
+<!--                android:layout_gravity="center_horizontal"-->
+<!--                android:hint="Tanggal"-->
+<!--                android:focusable="false"-->
+<!--                android:longClickable="false"-->
+<!--                android:singleLine="true"-->
+<!--                android:textSize="14dp"-->
+<!--                tools:layout_editor_absoluteX="41dp"-->
+<!--                tools:layout_editor_absoluteY="442dp" />-->
+<!--        </com.google.android.material.textfield.TextInputLayout>-->
+
+<!--        <com.google.android.material.textfield.TextInputLayout-->
+<!--            android:id="@+id/edittextmaterial"-->
+<!--            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:paddingLeft="30dp"-->
+<!--            android:paddingRight="30dp"-->
+<!--            android:layout_centerHorizontal="true"-->
+<!--            android:layout_marginTop="15dp"-->
+<!--            app:boxCornerRadiusBottomEnd="25dp"-->
+<!--            app:boxCornerRadiusBottomStart="25dp"-->
+<!--            app:boxCornerRadiusTopEnd="25dp"-->
+<!--            app:boxCornerRadiusTopStart="25dp"-->
+<!--            app:boxStrokeColor="#0F4C81"-->
+<!--            android:layout_below="@+id/edittexttanggal">-->
+<!--            <EditText-->
+<!--                android:id="@+id/material"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="50dp"-->
+<!--                android:layout_gravity="center_horizontal"-->
+<!--                android:hint="Material"-->
+<!--                android:focusable="false"-->
+<!--                android:longClickable="false"-->
+<!--                android:singleLine="true"-->
+<!--                android:textSize="14dp"-->
+<!--                tools:layout_editor_absoluteX="41dp"-->
+<!--                tools:layout_editor_absoluteY="442dp" />-->
+<!--        </com.google.android.material.textfield.TextInputLayout>-->
+
+<!--        <com.google.android.material.textfield.TextInputLayout-->
+<!--            android:id="@+id/edittextpabrik"-->
+<!--            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:paddingLeft="30dp"-->
+<!--            android:paddingRight="30dp"-->
+<!--            android:layout_centerHorizontal="true"-->
+<!--            android:layout_marginTop="15dp"-->
+<!--            app:boxCornerRadiusBottomEnd="25dp"-->
+<!--            app:boxCornerRadiusBottomStart="25dp"-->
+<!--            app:boxCornerRadiusTopEnd="25dp"-->
+<!--            app:boxCornerRadiusTopStart="25dp"-->
+<!--            app:boxStrokeColor="#0F4C81"-->
+<!--            android:layout_below="@+id/edittextmaterial">-->
+<!--            <EditText-->
+<!--                android:id="@+id/pabrik"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="50dp"-->
+<!--                android:layout_gravity="center_horizontal"-->
+<!--                android:hint="Pabrik"-->
+<!--                android:focusable="false"-->
+<!--                android:longClickable="false"-->
+<!--                android:singleLine="true"-->
+<!--                android:textSize="14dp"-->
+<!--                tools:layout_editor_absoluteX="41dp"-->
+<!--                tools:layout_editor_absoluteY="442dp" />-->
+<!--        </com.google.android.material.textfield.TextInputLayout>-->
+
+<!--        <com.google.android.material.textfield.TextInputLayout-->
+<!--            android:id="@+id/edittextwindow"-->
+<!--            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:paddingLeft="30dp"-->
+<!--            android:paddingRight="30dp"-->
+<!--            android:layout_centerHorizontal="true"-->
+<!--            android:layout_marginTop="15dp"-->
+<!--            app:boxCornerRadiusBottomEnd="25dp"-->
+<!--            app:boxCornerRadiusBottomStart="25dp"-->
+<!--            app:boxCornerRadiusTopEnd="25dp"-->
+<!--            app:boxCornerRadiusTopStart="25dp"-->
+<!--            app:boxStrokeColor="#0F4C81"-->
+<!--            android:layout_below="@+id/edittextpabrik">-->
+<!--            <EditText-->
+<!--                android:id="@+id/window"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="50dp"-->
+<!--                android:layout_gravity="center_horizontal"-->
+<!--                android:hint="Window"-->
+<!--                android:focusable="false"-->
+<!--                android:longClickable="false"-->
+<!--                android:singleLine="true"-->
+<!--                android:textSize="14dp"-->
+<!--                tools:layout_editor_absoluteX="41dp"-->
+<!--                tools:layout_editor_absoluteY="442dp" />-->
+<!--        </com.google.android.material.textfield.TextInputLayout>-->
+
+<!--        <com.google.android.material.textfield.TextInputLayout-->
+<!--            android:id="@+id/edittexttujuandepo"-->
+<!--            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:paddingLeft="30dp"-->
+<!--            android:paddingRight="30dp"-->
+<!--            android:layout_centerHorizontal="true"-->
+<!--            android:layout_marginTop="15dp"-->
+<!--            app:boxCornerRadiusBottomEnd="25dp"-->
+<!--            app:boxCornerRadiusBottomStart="25dp"-->
+<!--            app:boxCornerRadiusTopEnd="25dp"-->
+<!--            app:boxCornerRadiusTopStart="25dp"-->
+<!--            app:boxStrokeColor="#0F4C81"-->
+<!--            android:layout_below="@+id/edittextwindow">-->
+<!--            <EditText-->
+<!--                android:id="@+id/tujuandepo"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="50dp"-->
+<!--                android:layout_gravity="center_horizontal"-->
+<!--                android:hint="Tujuan CO"-->
+<!--                android:focusable="false"-->
+<!--                android:longClickable="false"-->
+<!--                android:singleLine="true"-->
+<!--                android:textSize="14dp"-->
+<!--                tools:layout_editor_absoluteX="41dp"-->
+<!--                tools:layout_editor_absoluteY="442dp" />-->
+<!--        </com.google.android.material.textfield.TextInputLayout>-->
+
+<!--        <com.google.android.material.textfield.TextInputLayout-->
+<!--            android:id="@+id/edittexttransporter"-->
+<!--            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:paddingLeft="30dp"-->
+<!--            android:paddingRight="30dp"-->
+<!--            android:layout_centerHorizontal="true"-->
+<!--            android:layout_marginTop="15dp"-->
+<!--            app:boxCornerRadiusBottomEnd="25dp"-->
+<!--            app:boxCornerRadiusBottomStart="25dp"-->
+<!--            app:boxCornerRadiusTopEnd="25dp"-->
+<!--            app:boxCornerRadiusTopStart="25dp"-->
+<!--            app:boxStrokeColor="#0F4C81"-->
+<!--            android:layout_below="@+id/edittexttujuandepo">-->
+<!--            <EditText-->
+<!--                android:id="@+id/transporter"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="50dp"-->
+<!--                android:layout_gravity="center_horizontal"-->
+<!--                android:hint="Transporter"-->
+<!--                android:focusable="false"-->
+<!--                android:longClickable="false"-->
+<!--                android:singleLine="true"-->
+<!--                android:textSize="14dp"-->
+<!--                tools:layout_editor_absoluteX="41dp"-->
+<!--                tools:layout_editor_absoluteY="442dp" />-->
+<!--        </com.google.android.material.textfield.TextInputLayout>-->
+
+<!--        <com.google.android.material.textfield.TextInputLayout-->
+<!--            android:id="@+id/edittexttujuan"-->
+<!--            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:paddingLeft="30dp"-->
+<!--            android:paddingRight="30dp"-->
+<!--            android:layout_centerHorizontal="true"-->
+<!--            android:layout_marginTop="15dp"-->
+<!--            app:boxCornerRadiusBottomEnd="25dp"-->
+<!--            app:boxCornerRadiusBottomStart="25dp"-->
+<!--            app:boxCornerRadiusTopEnd="25dp"-->
+<!--            app:boxCornerRadiusTopStart="25dp"-->
+<!--            app:boxStrokeColor="#0F4C81"-->
+<!--            android:layout_below="@+id/edittexttransporter">-->
+<!--            <EditText-->
+<!--                android:id="@+id/tujuan"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="50dp"-->
+<!--                android:layout_gravity="center_horizontal"-->
+<!--                android:hint="Pilih Tujuan"-->
+<!--                android:focusable="false"-->
+<!--                android:longClickable="false"-->
+<!--                android:singleLine="true"-->
+<!--                android:textSize="14dp"-->
+<!--                tools:layout_editor_absoluteX="41dp"-->
+<!--                tools:layout_editor_absoluteY="442dp" />-->
+<!--        </com.google.android.material.textfield.TextInputLayout>-->
+
+
+
+<!--        <com.google.android.material.textfield.TextInputLayout-->
+<!--            android:id="@+id/editdepo"-->
+<!--            android:layout_below="@id/edittexttujuan"-->
+<!--            android:visibility="invisible"-->
+<!--            android:layout_width="fill_parent"-->
+<!--            android:paddingLeft="30dp"-->
+<!--            android:paddingRight="30dp"-->
+<!--            app:boxCornerRadiusBottomEnd="30dp"-->
+<!--            app:boxCornerRadiusTopEnd="30dp"-->
+<!--            app:boxCornerRadiusBottomStart="30dp"-->
+<!--            app:boxCornerRadiusTopStart="30dp"-->
+<!--            android:layout_height="60dp"-->
+<!--            android:hint="pilih depo"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:layout_marginBottom="10dp"-->
+<!--            android:layout_centerHorizontal="true">-->
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:orientation="horizontal">-->
+
+<!--                <com.google.android.material.textfield.TextInputEditText-->
+<!--                    android:id="@+id/depotext"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_gravity="center_horizontal"-->
+<!--                    android:focusable="false"-->
+<!--                    android:hint="Pilih BKB"-->
+<!--                    android:inputType="none" />-->
+<!--                <com.toptoche.searchablespinnerlibrary.SearchableSpinner-->
+<!--                    android:id="@+id/choosedepo"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_marginLeft="-50dp"-->
+<!--                    android:layout_marginTop="12dp"-->
+<!--                    android:layout_height="42dp"-->
+<!--                    android:clickable="true"-->
+<!--                    android:focusable="false"-->
+<!--                    android:longClickable="false"-->
+<!--                    android:textColor="#333"-->
+<!--                    android:textSize="20dp"-->
+<!--                    android:textStyle="bold" />-->
+<!--            </LinearLayout>-->
+
+<!--        </com.google.android.material.textfield.TextInputLayout>-->
+
+<!--        <com.google.android.material.textfield.TextInputLayout-->
+<!--            android:id="@+id/editso"-->
+<!--            android:visibility="invisible"-->
+<!--            android:layout_below="@id/edittexttujuan"-->
+<!--            android:layout_width="fill_parent"-->
+<!--            android:paddingLeft="30dp"-->
+<!--            android:paddingRight="30dp"-->
+<!--            app:boxCornerRadiusBottomEnd="30dp"-->
+<!--            app:boxCornerRadiusTopEnd="30dp"-->
+<!--            app:boxCornerRadiusBottomStart="30dp"-->
+<!--            app:boxCornerRadiusTopStart="30dp"-->
+<!--            android:layout_height="60dp"-->
+<!--            android:hint="pilih so"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:layout_marginBottom="10dp"-->
+<!--            android:layout_centerHorizontal="true">-->
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:orientation="horizontal">-->
+
+<!--                <com.google.android.material.textfield.TextInputEditText-->
+<!--                    android:id="@+id/sotext"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_gravity="center_horizontal"-->
+<!--                    android:focusable="false"-->
+<!--                    android:hint="Pilih BKB"-->
+<!--                    android:inputType="none" />-->
+<!--                <com.toptoche.searchablespinnerlibrary.SearchableSpinner-->
+<!--                    android:id="@+id/chooseso"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_marginLeft="-50dp"-->
+<!--                    android:layout_marginTop="12dp"-->
+<!--                    android:layout_height="42dp"-->
+<!--                    android:clickable="true"-->
+<!--                    android:focusable="false"-->
+<!--                    android:longClickable="false"-->
+<!--                    android:textColor="#333"-->
+<!--                    android:textSize="20dp"-->
+<!--                    android:textStyle="bold" />-->
+<!--            </LinearLayout>-->
+
+<!--        </com.google.android.material.textfield.TextInputLayout>-->
+
+<!--        <Button-->
+<!--            android:id="@+id/update_final"-->
+<!--            android:layout_width="350dp"-->
+<!--            android:layout_height="48dp"-->
+<!--            android:background="@drawable/rounded_corner"-->
+<!--            android:backgroundTint="#0f4c81"-->
+<!--            android:foreground="?android:attr/selectableItemBackground"-->
+<!--            android:scaleType="fitXY"-->
+<!--            android:text="Update Tujuan Final"-->
+<!--            android:layout_marginTop="15dp"-->
+<!--            android:textAllCaps="false"-->
+<!--            android:textColor="#FFF"-->
+<!--            android:layout_centerInParent="true"-->
+<!--            android:textStyle="bold"-->
+<!--            android:layout_below="@+id/editso"-->
+<!--            />-->
+
+<!--    </RelativeLayout>-->
+</ScrollView>
